@@ -96,6 +96,7 @@ const stop = async () => {
 
 async function fetchMicrophones() {
   try {
+    throw Error("teste de erro de microfone");
     const devices = await navigator.mediaDevices.enumerateDevices();
     microphonesDevicesList = devices
       .filter(device => device.kind === 'audioinput')
