@@ -191,7 +191,7 @@ async function checkError() {
 
 fetchMicrophones();
 
-navigator.mediaDevices.addEventListener('devicechange', fetchMicrophones);
+navigator.mediaDevices?.addEventListener('devicechange', fetchMicrophones);
 
 export default {
   init,
