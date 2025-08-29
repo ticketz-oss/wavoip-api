@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
